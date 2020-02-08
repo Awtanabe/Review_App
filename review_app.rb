@@ -25,14 +25,6 @@ class Review
   end
 end
 
-#入力画面の空欄対策
-# def blank_checker(value)
-#   if value == ''
-#     puts '何か入力してください'
-#     ganre = gets.chomp
-#   end
-# end
-
 #レビュー入力画面
 def review_input
   puts 'ジャンルは？'
@@ -71,10 +63,7 @@ end
 
 #動作選択入力画面
 def start_review
-  $action_text = '
-  [0]レビュー入力
-  [1]レビュー選択
-  [2]アプリ終了'
+  $action_text = '[0]レビュー入力 [1]レビュー選択 [2]アプリ終了'
 
   puts $action_text
   input = gets.to_i
